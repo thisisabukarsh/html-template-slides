@@ -247,6 +247,7 @@ function goToSlide(index) {
     slides[index].classList.remove("previous");
   } else {
     slides[currentSlideIndex].classList.add("previous");
+    slides[index].classList.remove("previous"); // Always remove previous from target
   }
 
   // Update index
