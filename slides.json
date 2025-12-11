@@ -1,0 +1,160 @@
+{
+  "title": "My Awesome Presentation",
+  "slides": [
+    {
+      "layout": "title",
+      "heading": "Welcome to HTML Slides",
+      "subheading": "A Modern Presentation Template"
+    },
+    {
+      "layout": "content",
+      "heading": "What is This?",
+      "text": "This is a powerful HTML/CSS-based presentation system that lets you create beautiful slides using simple JSON configuration.",
+      "bullets": [
+        "No complex software needed",
+        "Just edit JSON and refresh",
+        "Works in any modern browser",
+        "Fully responsive design"
+      ]
+    },
+    {
+      "layout": "content",
+      "heading": "Key Features",
+      "bullets": [
+        "Multiple layout types (title, content, two-column, image)",
+        "Smooth animations and transitions",
+        "Keyboard shortcuts for easy navigation",
+        "Overview mode to see all slides",
+        "Auto-saves your progress",
+        "Print to PDF support"
+      ]
+    },
+    {
+      "layout": "two-column",
+      "heading": "Two Column Layout",
+      "leftHeading": "Benefits",
+      "leftContent": [
+        "Easy to compare ideas",
+        "Professional appearance",
+        "Great for pros and cons",
+        "Flexible content types"
+      ],
+      "rightHeading": "Use Cases",
+      "rightContent": [
+        "Before and After",
+        "Pros and Cons",
+        "Old vs New",
+        "Features comparison"
+      ]
+    },
+    {
+      "layout": "content",
+      "heading": "Keyboard Shortcuts",
+      "numbered": [
+        "Use Arrow keys (← →) to navigate between slides",
+        "Press 'O' to toggle overview mode and see all slides",
+        "Press 'F' to enter fullscreen presentation mode",
+        "Press 'Home' or 'End' to jump to first or last slide",
+        "Press 'Esc' to exit fullscreen or overview mode",
+        "Press '?' to see help with all shortcuts"
+      ]
+    },
+    {
+      "layout": "image",
+      "heading": "You Can Add Images",
+      "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
+      "caption": "Images make your presentation more engaging"
+    },
+    {
+      "layout": "content",
+      "heading": "Mixed Content Example",
+      "text": "You can combine different content types in a single slide:",
+      "bullets": [
+        "Add text paragraphs for explanations",
+        "Use bullet points for key ideas",
+        "Include images to visualize concepts",
+        "Everything works together seamlessly"
+      ],
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
+    },
+    {
+      "layout": "content",
+      "heading": "How to Edit",
+      "bullets": [
+        "Open slides.json in any text editor",
+        "Add, remove, or modify slide objects",
+        "Save the file",
+        "Refresh your browser - that's it!",
+        "No compilation or build process needed"
+      ]
+    },
+    {
+      "layout": "two-column",
+      "heading": "Available Layouts",
+      "leftHeading": "Layout Types",
+      "leftContent": "title - For cover slides with heading and subheading.\n\ncontent - Standard slide with heading, text, bullets, or images.\n\ntwo-column - Split content into two columns.\n\nimage - Focus on a large image with caption.",
+      "rightHeading": "Easy Customization",
+      "rightContent": "Just specify the layout type in your slide object, add the required fields, and you're done! Each layout is optimized for its specific purpose."
+    },
+    {
+      "layout": "content",
+      "heading": "Responsive Design",
+      "text": "This presentation looks great on any device:",
+      "bullets": [
+        "Desktop computers and laptops",
+        "Tablets in any orientation",
+        "Mobile phones for on-the-go viewing",
+        "Large displays and projectors"
+      ]
+    },
+    {
+      "layout": "content",
+      "heading": "Microsoft Edge Theme",
+      "text": "The color scheme uses the beautiful Microsoft Edge gradient:",
+      "bullets": [
+        "Modern blue-to-teal gradient",
+        "Professional and eye-catching",
+        "High contrast for readability",
+        "Looks great in any lighting"
+      ]
+    },
+    {
+      "layout": "content",
+      "heading": "Overview Mode",
+      "text": "Press 'O' or click the grid icon to see all slides at once. This lets you:",
+      "bullets": [
+        "Get a bird's eye view of your presentation",
+        "Jump to any slide instantly",
+        "See which slide you're currently on",
+        "Navigate like PowerPoint's slide sorter"
+      ]
+    },
+    {
+      "layout": "content",
+      "heading": "Print to PDF",
+      "text": "Want to share your presentation? Just print it!",
+      "bullets": [
+        "File → Print in your browser",
+        "Select 'Save as PDF' as destination",
+        "All slides will be formatted perfectly",
+        "One slide per page automatically"
+      ]
+    },
+    {
+      "layout": "content",
+      "heading": "Auto-Save Progress",
+      "text": "Your presentation automatically remembers where you left off:",
+      "bullets": [
+        "Closes browser by accident? No problem!",
+        "Resume from the exact slide you were on",
+        "Works for up to 24 hours",
+        "Perfect for multi-session presentations"
+      ]
+    },
+    {
+      "layout": "title",
+      "heading": "Thank You!",
+      "subheading": "Start creating amazing presentations today"
+    }
+  ]
+}

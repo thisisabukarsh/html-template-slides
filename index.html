@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentation Slides</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main Slide Container -->
+    <div id="presentation">
+      <div id="slides-container"></div>
+
+      <!-- Slide Counter -->
+      <div id="slide-counter">
+        <span id="current-slide">1</span> / <span id="total-slides">1</span>
+      </div>
+
+      <!-- Progress Bar -->
+      <div id="progress-bar">
+        <div id="progress-fill"></div>
+      </div>
+
+      <!-- Navigation Controls -->
+      <button id="prev-btn" class="nav-btn" aria-label="Previous slide">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M15 18l-6-6 6-6" />
+        </svg>
+      </button>
+      <button id="next-btn" class="nav-btn" aria-label="Next slide">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M9 18l6-6-6-6" />
+        </svg>
+      </button>
+
+      <!-- Overview Toggle Button -->
+      <button
+        id="overview-btn"
+        class="control-btn"
+        aria-label="Toggle overview"
+        title="Press 'O' for overview"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <rect x="3" y="3" width="7" height="7" />
+          <rect x="14" y="3" width="7" height="7" />
+          <rect x="3" y="14" width="7" height="7" />
+          <rect x="14" y="14" width="7" height="7" />
+        </svg>
+      </button>
+
+      <!-- Fullscreen Toggle Button -->
+      <button
+        id="fullscreen-btn"
+        class="control-btn"
+        aria-label="Toggle fullscreen"
+        title="Press 'F' for fullscreen"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Overview Mode Container -->
+    <div id="overview-container" class="hidden">
+      <div id="overview-header">
+        <h2>Slide Overview</h2>
+        <button id="close-overview" aria-label="Close overview">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+      <div id="overview-grid"></div>
+    </div>
+
+    <!-- Keyboard Shortcuts Help -->
+    <div id="help-overlay" class="hidden">
+      <div id="help-content">
+        <h2>Keyboard Shortcuts</h2>
+        <div class="shortcuts-grid">
+          <div class="shortcut">
+            <kbd>←</kbd> <kbd>→</kbd>
+            <span>Navigate slides</span>
+          </div>
+          <div class="shortcut">
+            <kbd>Home</kbd> <kbd>End</kbd>
+            <span>First/Last slide</span>
+          </div>
+          <div class="shortcut">
+            <kbd>O</kbd>
+            <span>Toggle overview</span>
+          </div>
+          <div class="shortcut">
+            <kbd>F</kbd>
+            <span>Fullscreen mode</span>
+          </div>
+          <div class="shortcut">
+            <kbd>Esc</kbd>
+            <span>Exit fullscreen/overview</span>
+          </div>
+          <div class="shortcut">
+            <kbd>?</kbd>
+            <span>Show this help</span>
+          </div>
+        </div>
+        <button id="close-help">Close</button>
+      </div>
+    </div>
+
+    <!-- Loading Indicator -->
+    <div id="loading">
+      <div class="loader"></div>
+      <p>Loading presentation...</p>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error-container" class="hidden">
+      <div id="error-content">
+        <h2>Error Loading Presentation</h2>
+        <p id="error-message"></p>
+        <button onclick="location.reload()">Reload</button>
+      </div>
+    </div>
+
+    <script src="slides.js"></script>
+  </body>
+</html>

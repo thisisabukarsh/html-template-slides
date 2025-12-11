@@ -1,0 +1,19 @@
+{
+  "title": "My Presentation",
+  "slides": [
+    {
+      "layout": "title",
+      "heading": "Your Title Here",
+      "subheading": "Your Subtitle"
+    },
+    {
+      "layout": "content",
+      "heading": "Slide 2",
+      "bullets": ["Point 1", "Point 2", "Point 3"]
+    },
+    {
+      "layout": "title",
+      "heading": "Thank You"
+    }
+  ]
+}
