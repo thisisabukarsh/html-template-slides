@@ -238,23 +238,32 @@ function goToSlide(index) {
     return;
   }
 
-  // Remove active class from current slide
-  slides[currentSlideIndex].classList.remove("active");
+  const oldIndex = currentSlideIndex;
+  const goingBackward = index < currentSlideIndex;
 
-  // Add previous class for animation direction
-  if (index < currentSlideIndex) {
-    slides[currentSlideIndex].classList.add("previous");
-    slides[index].classList.remove("previous");
-  } else {
-    slides[currentSlideIndex].classList.add("previous");
-    slides[index].classList.remove("previous"); // Always remove previous from target
-  }
+  // Remove active class from current slide
+  slides[oldIndex].classList.remove("active");
 
   // Update index
   currentSlideIndex = index;
 
-  // Add active class to new slide
-  slides[currentSlideIndex].classList.add("active");
+  if (goingBackward) {
+    // Going backward - new slide comes from LEFT
+    slides[oldIndex].classList.remove("previous"); // Old slide stays at center then goes right
+    slides[index].classList.add("previous"); // Position new slide on the left
+
+    // Force browser to register the position before animating
+    slides[index].offsetHeight; // Trigger reflow
+
+    // Now animate to center
+    slides[index].classList.remove("previous");
+    slides[index].classList.add("active");
+  } else {
+    // Going forward - new slide comes from RIGHT
+    slides[oldIndex].classList.add("previous"); // Old slide goes left
+    slides[index].classList.remove("previous"); // Ensure new slide is on the right (default)
+    slides[index].classList.add("active"); // Animate from right to center
+  }
 
   // Update UI
   updateUI();
